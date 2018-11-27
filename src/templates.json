@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "body": "{greeting} {guest}, and welcome to {hotel}! Room {room} is now ready you. Enjoy your stay, and let us know if you need anything."
+    },
+    {
+        "id": 2,
+        "body": "Welcome to {hotel}! {greeting} {guest}, your room number is {room}. Have a great stay!"
+    },
+    {
+        "id": 3,
+        "body": "{greeting} {guest}! As the manager of {hotel}, I would like to welcome you! Room {room} is now ready for you.  Please enjoy your stay!"
+    }
+]
