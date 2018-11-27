@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/message-generator/static/css/1.ab9d0b15.chunk.css"
   },
   {
-    "revision": "424704e172c4f0765ff26b13387c2e2d",
+    "revision": "1d89eb49623f88dd3239bad5b9ea0062",
     "url": "/message-generator/index.html"
   }
 ];
