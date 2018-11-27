@@ -1,7 +1,7 @@
 # Message Generator
 
 ### Link to Deployed Project:
-* 
+* https://mnelson13.github.io/message-generator/
 
 ### Instructions
 

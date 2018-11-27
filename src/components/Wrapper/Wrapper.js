@@ -11,7 +11,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import { Modal } from 'react-materialize';
 import moment from 'moment';
 
-
+//Form class to create Form objects that will render form options (guests and hotels)
 class Form {
     constructor(id, value){
         this.id = id;
@@ -44,6 +44,7 @@ class Wrapper extends React.Component {
         newTemplate: ""
     }
     
+    //on component mount, initializes selection forms and modal, runs setGreeting function
     componentDidMount(){
         var elems = document.querySelectorAll('select');
         var instances = M.FormSelect.init(elems);
@@ -52,6 +53,7 @@ class Wrapper extends React.Component {
         this.setGreeting();
     }
 
+    //gets the current time and sets the greeting based on the time of day
     setGreeting = () => {
         var currentTime = moment().format("HH");
 
@@ -64,6 +66,7 @@ class Wrapper extends React.Component {
         }
     }
 
+    //sets the hotel as the hotel selected from the hotel form
     handleHotelChange = event => {
         var index=event.target.value -1
         this.setState({
@@ -71,6 +74,7 @@ class Wrapper extends React.Component {
         })
     }
 
+    //sets the guest as the guest selected from the guest form
     handleGuestChange = event => {
         var index=event.target.value -1
         this.setState({
@@ -80,7 +84,7 @@ class Wrapper extends React.Component {
         })
     }
     
-
+    //sets the messageId as the id of the message selected, then displays the modal
     send = (id) => {
         this.setState({
             messageId: id
@@ -90,6 +94,7 @@ class Wrapper extends React.Component {
         })
     }
 
+    //creates a new template object, then pushes it onto the list of templates
     save = () => {
         var id = this.state.templates.length +1
         var body = this.state.newTemplate
@@ -102,6 +107,7 @@ class Wrapper extends React.Component {
         
     }
 
+    //updates the newTemplate state as the user enters their custom message into the form
     handleInputChange = event => {
         const { name, value } = event.target
         this.setState({
@@ -163,15 +169,17 @@ class Wrapper extends React.Component {
                         ))
                     ): ""}
                 </div>
+
                 <div>
-                {this.state.guestName !== "" && this.state.hotel !== "" ? (
-                <TemplateForm
-                    handleInputChange={this.handleInputChange}
-                    value={this.state.newTemplate}
-                    save={this.save}
-                />
-                ): ""}
+                    {this.state.guestName !== "" && this.state.hotel !== "" ? (
+                        <TemplateForm
+                            handleInputChange={this.handleInputChange}
+                            value={this.state.newTemplate}
+                            save={this.save}
+                        />
+                    ): ""}
                 </div>
+                
             </div>
         )
     }
