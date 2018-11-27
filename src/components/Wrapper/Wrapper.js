@@ -161,10 +161,10 @@ class Wrapper extends React.Component {
                             send={this.send}
                             message={
                                 message.body
-                                .replace('{greeting}', this.state.greeting)
-                                .replace('{guest}', this.state.guestName)
-                                .replace('{hotel}', this.state.hotel)
-                                .replace('{room}', this.state.room)}
+                                .replace(/{greeting}/g, this.state.greeting)
+                                .replace(/{guest}/g, this.state.guestName)
+                                .replace(/{hotel}/g, this.state.hotel)
+                                .replace(/{room}/g, this.state.room)}
                             />
                         ))
                     ): ""}
@@ -179,7 +179,7 @@ class Wrapper extends React.Component {
                         />
                     ): ""}
                 </div>
-                
+
             </div>
         )
     }
