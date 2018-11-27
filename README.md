@@ -40,6 +40,6 @@
 ### Future Directions
 * If given more time, I would look into a way to be able to actually send a message to a given cell phone number. 
     * Right now, the app does not actually send any messages, but rather alerts that a certain message has been "sent" to a guest.
-* Option to delete custom messages.
+* Adding a database so that guests, hotels, and templates could be saved, added, updated, and deleted.
 * Another feature to add would be User Authentication.
     * With User Authentication, a user could log in and save custom messages to their account, as well as add guests.

@@ -177,7 +177,7 @@ class Wrapper extends React.Component {
                             value={this.state.newTemplate}
                             save={this.save}
                         />
-                    ): ""}
+                    ): <h4>Select a hotel and a guest to see messages.</h4>}
                 </div>
 
             </div>
