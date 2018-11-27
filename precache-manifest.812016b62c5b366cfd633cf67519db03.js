@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/message-generator/static/js/runtime~main.5247e551.js"
   },
   {
-    "revision": "1e575b8de46d962c7ca4",
-    "url": "/message-generator/static/js/main.1e575b8d.chunk.js"
+    "revision": "22b81c6638c8b91c4396",
+    "url": "/message-generator/static/js/main.22b81c66.chunk.js"
   },
   {
     "revision": "f48a7d27b77e4e5e38e8",
     "url": "/message-generator/static/js/1.f48a7d27.chunk.js"
   },
   {
-    "revision": "1e575b8de46d962c7ca4",
+    "revision": "22b81c6638c8b91c4396",
     "url": "/message-generator/static/css/main.3d8d680a.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/message-generator/static/css/1.ab9d0b15.chunk.css"
   },
   {
-    "revision": "e53f11a1a45ae188728da94859dd86d4",
+    "revision": "f3337fce11b7d7e1983eb5a8e7991708",
     "url": "/message-generator/index.html"
   }
 ];
